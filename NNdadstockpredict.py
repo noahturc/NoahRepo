@@ -9,11 +9,12 @@ from keras.callbacks import EarlyStopping
 #loading csv file 
 df_raw = pd.read_csv(r'C:\Users\15862\Downloads\StcksML.csv')
 
+#gets the unique symbols from the symbol column in df_raw
 df_distinct = df_raw['Symbol'].unique()
 
 '''visualize = pd.DataFrame()
 visualize_8 = pd.DataFrame()'''
-
+#creates an empty dictionary
 results = {}
 for symbol in df_distinct:
     df = df_raw[df_raw['Symbol'] == symbol]
