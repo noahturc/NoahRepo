@@ -6,7 +6,7 @@ from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense, LeakyReLU, Dropout
 import matplotlib.pyplot as plt
 from keras.callbacks import EarlyStopping
-
+#loading csv file 
 df_raw = pd.read_csv(r'C:\Users\15862\Downloads\StcksML.csv')
 
 df_distinct = df_raw['Symbol'].unique()
