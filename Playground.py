@@ -5,6 +5,7 @@ def find_highest(lst):
       highest = num
   return highest
 
+
 def fizz_buzz(num):
   if num is not None:
     if (num%3 == 0) and (num%5 == 0):
@@ -33,6 +34,7 @@ def snakefill(n):
 
 #print(snakefill(24))
 
+# converts time to 24 time
 def convertTime(time):
   x = time[-2]
   firstTwoDigits = time[:2]
