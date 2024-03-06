@@ -34,7 +34,7 @@ def snakefill(n):
 
 #print(snakefill(24))
 
-# converts time to 24 time
+# converts normal time to 24 hour clock time
 def convertTime(time):
   x = time[-2]
   firstTwoDigits = time[:2]
