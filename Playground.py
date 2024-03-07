@@ -1,3 +1,4 @@
+# finds highest number in a list
 def find_highest(lst):
   highest = lst[0]
   for num in lst:
