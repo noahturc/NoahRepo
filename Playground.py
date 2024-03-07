@@ -20,8 +20,8 @@ def fizz_buzz(num):
       print(str(num))
   else:
     print('None')
-
 #fizz_buzz(3)
+
 
 def snakefill(n):
 
@@ -32,8 +32,8 @@ def snakefill(n):
     snake *= 2
     i += 1
   return i - 1
-
 #print(snakefill(24))
+
 
 # converts normal time to 24 hour clock time
 def convertTime(time):
@@ -57,5 +57,10 @@ def convertTime(time):
     result = 'You supposed to specify PM or AM bruhhh'
    
   return result[:-2]
-
 #print(convertTime('07:05:45PM'))
+
+
+def profit(info):
+  #x = info.keys()
+  return info['sell_price'] * info['inventory'] - info['cost_price'] * info['inventory']
+# print(profit({'cost_price': 2.77, 'sell_price': 7.95, 'inventory': 8500}))
